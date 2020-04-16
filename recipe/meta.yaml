@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
   run:
     - elasticsearch >=7.6.0,<8
     - pandas >=1.0.0
-    - matplotlib
+    - matplotlib-base
     - python
 
 test:
