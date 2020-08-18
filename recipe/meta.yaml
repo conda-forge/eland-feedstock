@@ -28,6 +28,7 @@ test:
   requires:
     - scikit-learn
     - xgboost
+    - lightgbm
   imports:
     - eland
     - eland.ml
