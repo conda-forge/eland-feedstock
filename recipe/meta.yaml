@@ -1,5 +1,5 @@
 {% set name = "eland" %}
-{% set version = "7.9.0a1" %}
+{% set version = "7.9.1a1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8a012b0db8e16f75ffaf7a751530c3a0f54fbf82062bbd431a68f65265a4c614
+  sha256: 3efba79963fb3222f52184ec382fb02b7d52af3e0295e0344038395c93d5d4bb
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: "Python Client and Toolkit for DataFrames, Big Data, Machine Learning and ETL in Elasticsearch"
+  summary: Python Client and Toolkit for DataFrames, Big Data, Machine Learning and ETL in Elasticsearch
   description: |
     Eland is a Elasticsearch client Python package to analyse, explore and manipulate data
     that resides in Elasticsearch. Where possible the package uses existing Python APIs and
