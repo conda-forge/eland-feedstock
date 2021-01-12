@@ -5,9 +5,13 @@ Home: https://eland.readthedocs.io
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eland-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python Client and Toolkit for DataFrames, Big Data, Machine Learning and ETL in Elasticsearch
+
+Development: https://github.com/elastic/eland
+
+Documentation: https://eland.readthedocs.io
 
 Eland is a Elasticsearch client Python package to analyse, explore and manipulate data
 that resides in Elasticsearch. Where possible the package uses existing Python APIs and
