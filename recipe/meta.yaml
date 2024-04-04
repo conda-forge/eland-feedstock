@@ -16,13 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - elasticsearch >=8,<9
-    - pandas >=1.2,<1.4
-    - matplotlib-base
-    - python >=3.7
+    - elasticsearch >=8.3,<9
+    - pandas >=1.5,<2
+    - matplotlib-base >=3.6
+    - numpy >=1.2,<1.24
+    - packaging
+    - python >=3.8
 
 test:
   requires:
@@ -53,3 +55,4 @@ extra:
     - ezimuel
     - joshmock
     - stevedodson
+    - pquentin
