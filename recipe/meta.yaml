@@ -1,5 +1,5 @@
 {% set name = "eland" %}
-{% set version = "8.12.1" %}
+{% set version = "8.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 29cf9df432b848e53402a7adb9f7d8672c946e0dca60afe5a2b11e7a70e64c7c
+  sha256: aec51b96a6cafa252a7923a9b3e02b56a00aa1de1cb773604f3b3156485861d7
 
 build:
   noarch: python
@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<3.11
+    - python >=3.8,<3.12
     - pip
   run:
     - elasticsearch >=8.3,<9
@@ -24,7 +24,7 @@ requirements:
     - matplotlib-base >=3.6
     - numpy >=1.2,<2
     - packaging
-    - python >=3.8,<3.11
+    - python >=3.8,<3.12
 
 test:
   requires:
