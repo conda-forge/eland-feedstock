@@ -1,5 +1,5 @@
 {% set name = "eland" %}
-{% set version = "8.14.0" %}
+{% set version = "8.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dba99def76f4e0084cfa85fecbe51b0f5e38bfae1618fe83564b9a6d94d18665
+  sha256: 51980bcb7c72db9c544e058b8a7f9d1eab9f9f94e97cdb823f21233cb2261ff9
 
 build:
   noarch: python
