@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.8,<3.12
     - pip
+    - setuptools
   run:
     - elasticsearch >=8.3,<9
     - pandas >=1.5,<2
