@@ -6,17 +6,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 5fd4959465de888ea1864821996d096cb64641066d1dd844527afe78736fa996
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8,<3.12
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
@@ -25,13 +25,14 @@ requirements:
     - matplotlib-base >=3.6
     - numpy >=1.2,<2
     - packaging
-    - python >=3.8,<3.12
+    - python >={{ python_min }},<3.12
 
 test:
   requires:
     - scikit-learn
     - xgboost
     - lightgbm
+    - python {{ python_min }}
   imports:
     - eland
     - eland.ml
