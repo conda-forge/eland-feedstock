@@ -158,5 +158,4 @@ Feedstock Maintainers
 * [@joshmock](https://github.com/joshmock/)
 * [@miguelgrinberg](https://github.com/miguelgrinberg/)
 * [@pquentin](https://github.com/pquentin/)
-* [@stevedodson](https://github.com/stevedodson/)
 
