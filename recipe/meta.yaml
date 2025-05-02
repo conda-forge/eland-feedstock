@@ -20,7 +20,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - elasticsearch >=8.3,<9
+    - elasticsearch >=9,<10
     - pandas >=1.5,<3
     - matplotlib-base >=3.6
     - numpy >=1.2,<2
